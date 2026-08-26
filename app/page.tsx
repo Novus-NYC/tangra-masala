@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 import {
-  GoogleMapSection,
   ImageBand,
   LocationCards,
   MenuGrid,
@@ -132,8 +131,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <GoogleMapSection />
 
       <SiteFooter />
     </main>
