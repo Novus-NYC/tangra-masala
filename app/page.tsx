@@ -8,59 +8,38 @@ import {
   SiteFooter,
   SiteHeader,
 } from "./components";
-import { galleryImages, images, location, signatures } from "./content";
+import { images } from "./content";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-paper text-ink">
       <SiteHeader />
 
-      <section className="hero-shell">
-        <div className="hero-collage" aria-hidden="true">
-          {galleryImages.slice(0, 4).map((image) => (
-            <img key={image.src} src={image.src} alt="" />
-          ))}
-        </div>
+      <section
+        className="hero-shell hero-photo-shell"
+        style={{ backgroundImage: `url(${images.hero})` }}
+      >
         <div className="hero-content-grid">
-          <div className="hero-copy-block scroll-reveal reveal-left is-visible">
-            <p className="eyebrow hero-kicker">Elmhurst, Queens · Chinese-Indian kitchen</p>
-            <h1 className="hero-title scroll-headline mt-5 font-serif">
-              Wok-born.<br />
-              <em>Queens</em> raised.
+          <div className="hero-center scroll-reveal reveal-up is-visible">
+            <p className="eyebrow hero-kicker">Indo-Chinese in Elmhurst</p>
+            <h1 className="hero-title">
+              Grand Avenue<br />
+              wok heat.
             </h1>
-            <p className="hero-copy mt-7">
-              Indo-Chinese cooking with a live-wire edge. Follow the sizzle to
-              Grand Avenue for Hakka noodles, smoky Manchurian, crisp starters,
-              and house masala made for passing around.
+            <p className="hero-copy">
+              Halal meat, Hakka noodles, Manchurian sauce, crisp starters, and
+              Tangra masala plates made for the middle of the table.
             </p>
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+            <div className="hero-actions">
               <a className="button button-electric" href="/menu">
-                Enter the Menu <span aria-hidden="true">↗</span>
+                View Menu <span aria-hidden="true">↗</span>
               </a>
               <a className="button button-outline-light" href="/locations">
-                Find our table
+                Visit Elmhurst
               </a>
             </div>
-            <div className="hero-meta" aria-label="Restaurant details">
-              <span>Halal meat</span><span>Hakka noodles</span><span>Big flavors</span>
-            </div>
           </div>
-
-          <aside className="signature-panel scroll-reveal reveal-right is-visible">
-            <div className="signature-panel-top">
-              <p className="eyebrow">The hit list</p>
-              <span>01 — 05</span>
-            </div>
-            {signatures.slice(0, 5).map((item) => (
-              <div className="signature-panel-row" key={item}>
-                <span>{item}</span>
-                <span>↗</span>
-              </div>
-            ))}
-            <a className="signature-link" href={location.phoneHref}>Call for takeout <span>→</span></a>
-          </aside>
         </div>
-        <div className="hero-index" aria-hidden="true"><span>01</span><i /><span>Scroll to stir</span></div>
       </section>
 
       <section className="section-rise intro-section bg-cream px-5 py-20 sm:px-8 lg:py-28">
