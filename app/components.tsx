@@ -290,6 +290,42 @@ export function LocationCards({ compact = false }: { compact?: boolean }) {
   );
 }
 
+export function GoogleMapSection() {
+  return (
+    <section className="map-section px-5 py-20 sm:px-8 lg:py-24">
+      <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-stretch">
+        <div className="scroll-reveal reveal-left map-copy">
+          <p className="eyebrow text-gold">Map</p>
+          <h2 className="mt-4 font-serif text-4xl font-black uppercase leading-tight sm:text-5xl">
+            Find the Grand Avenue storefront.
+          </h2>
+          <p className="mt-5 text-base font-semibold leading-7 text-cream/70">
+            Tangra Masala is in Elmhurst near Queens Boulevard and Grand Avenue.
+            Open the map for directions, transit, and current route timing.
+          </p>
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+            <a className="button button-gold" href={location.mapsUrl}>
+              Directions
+            </a>
+            <a className="button button-outline-light" href={location.phoneHref}>
+              Call
+            </a>
+          </div>
+        </div>
+        <div className="scroll-reveal reveal-right map-frame-wrap">
+          <iframe
+            aria-label="Google map for Tangra Masala"
+            className="map-frame"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            src={location.mapEmbedUrl}
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export function YelpMenuLink() {
   return (
     <a className="button button-outline-dark" href={site.menuSourceUrl} rel="noreferrer" target="_blank">

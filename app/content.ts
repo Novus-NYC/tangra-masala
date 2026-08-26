@@ -289,6 +289,8 @@ export const location = {
   hours: ["Monday - Thursday: 12PM - 9:30PM", "Friday - Sunday: 1PM - 12AM"],
   mapsUrl:
     "https://www.google.com/maps/search/?api=1&query=Tangra+Masala+8709+Grand+Ave+Elmhurst+NY+11373",
+  mapEmbedUrl:
+    "https://www.google.com/maps?q=Tangra%20Masala%2087-09%20Grand%20Avenue%20Elmhurst%20NY%2011373&output=embed",
   image: images.storefront,
   imageAlt: "Tangra Masala storefront on Grand Avenue in Elmhurst",
 };

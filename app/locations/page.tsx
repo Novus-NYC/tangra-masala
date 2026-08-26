@@ -1,4 +1,10 @@
-import { LocationCards, PageIntro, SiteFooter, SiteHeader } from "../components";
+import {
+  GoogleMapSection,
+  LocationCards,
+  PageIntro,
+  SiteFooter,
+  SiteHeader,
+} from "../components";
 import { images } from "../content";
 
 export default function LocationsPage() {
@@ -24,6 +30,7 @@ export default function LocationsPage() {
           </div>
         </div>
       </section>
+      <GoogleMapSection />
       <SiteFooter />
     </main>
   );
