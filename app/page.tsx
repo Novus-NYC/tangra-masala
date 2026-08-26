@@ -22,7 +22,7 @@ export default function Home() {
           <div className="hero-center scroll-reveal reveal-up is-visible">
             <p className="eyebrow hero-kicker">Indo-Chinese in Elmhurst</p>
             <h1 className="hero-title">
-              Grand Avenue<br />
+              authentic<br />
               wok heat.
             </h1>
             <p className="hero-copy">

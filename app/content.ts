@@ -26,7 +26,8 @@ export const signatures = [
 const tangraGalleryBase = "https://whereyoueat.com/r_gallery_images/rgallery-14735";
 
 export const images = {
-  hero: `${tangraGalleryBase}/Tangra_Masala19.jpg`,
+  hero:
+    "https://img.cdn4dd.com/cdn-cgi/image/fit%3Dcover%2Cwidth%3D1200%2Cheight%3D800%2Cformat%3Dauto%2Cquality%3D80/https%3A/doordash-static.s3.amazonaws.com/media/store/header/887bdb6a-e7f4-4cef-8a66-caca42fa66ce.jpg",
   storefront: "https://media.timeout.com/images/100408171/image.jpg",
   awning:
     "https://3.bp.blogspot.com/-eamaVGCC7ds/WE1FLvVmBxI/AAAAAAAAEtE/ASmHGny8z7gc2NqpSSFTODGC0w-_BlbKwCLcB/s1600/chin1.jpg",
