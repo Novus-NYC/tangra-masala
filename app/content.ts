@@ -23,8 +23,10 @@ export const signatures = [
   "Vegetable Manchow Soup",
 ];
 
+const tangraGalleryBase = "https://whereyoueat.com/r_gallery_images/rgallery-14735";
+
 export const images = {
-  hero: "https://media.timeout.com/images/100408171/image.jpg",
+  hero: `${tangraGalleryBase}/Tangra_Masala19.jpg`,
   storefront: "https://media.timeout.com/images/100408171/image.jpg",
   awning:
     "https://3.bp.blogspot.com/-eamaVGCC7ds/WE1FLvVmBxI/AAAAAAAAEtE/ASmHGny8z7gc2NqpSSFTODGC0w-_BlbKwCLcB/s1600/chin1.jpg",
@@ -34,8 +36,6 @@ export const images = {
     "https://cf-img-a-in.tosshub.com/sites/visualstory/wp/2024/09/cc-5-Copy.jpg?size=%2A%3A675",
   tangraPlate: "https://www.indiafoodnetwork.in/h-upload/2022/11/16/834446-3.webp",
 };
-
-const tangraGalleryBase = "https://whereyoueat.com/r_gallery_images/rgallery-14735";
 
 export const menuSections = [
   {
@@ -294,10 +294,6 @@ export const location = {
 };
 
 export const galleryImages = [
-  {
-    src: `${tangraGalleryBase}/Tangra_Masala4.jpg`,
-    alt: "Food from Tangra Masala",
-  },
   {
     src: `${tangraGalleryBase}/Tangra_Masala5.jpg`,
     alt: "Food from Tangra Masala",
