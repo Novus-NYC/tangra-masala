@@ -249,44 +249,44 @@ export function ImageBand() {
 
 export function LocationCards({ compact = false }: { compact?: boolean }) {
   return (
-    <div className="grid gap-6 lg:grid-cols-[0.78fr_0.82fr_1.1fr]">
-      <article className="location-card scroll-reveal reveal-left overflow-hidden border border-forest/40 bg-cream">
-        <div className="relative min-h-72 overflow-hidden bg-ink">
+    <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
+      <article className="location-card location-feature-card scroll-reveal reveal-left overflow-hidden border border-forest/40 bg-cream">
+        <div className="location-photo relative overflow-hidden bg-ink">
           <img
             alt={location.imageAlt}
-            className="h-full min-h-72 w-full object-cover transition duration-700 hover:scale-105"
+            className="h-full w-full object-cover transition duration-700 hover:scale-105"
             src={location.image}
           />
           <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(0,0,0,0.62),rgba(0,0,0,0.04))]" />
           <p className="absolute bottom-5 left-5 eyebrow text-gold">{location.shortName}</p>
         </div>
-      </article>
-      <article className="location-card scroll-reveal reveal-right border border-forest/40 bg-paper p-7">
-        <p className="eyebrow text-red">Original location</p>
-        <h3 className="mt-4 font-serif text-4xl font-black uppercase sm:text-5xl">
-          {location.name}
-        </h3>
-        <p className="mt-5 text-lg font-semibold leading-7">{location.address}</p>
-        <a className="mt-2 inline-flex text-lg font-bold text-red" href={location.phoneHref}>
-          {location.phone}
-        </a>
-        {!compact && (
-          <div className="mt-6 space-y-2 text-sm font-semibold uppercase tracking-[0.12em] text-ink/60">
-            {location.hours.map((hour) => (
-              <p key={hour}>{hour}</p>
-            ))}
+        <div className="p-7 sm:p-8">
+          <p className="eyebrow text-red">Original location</p>
+          <h3 className="mt-4 font-serif text-4xl font-black uppercase sm:text-5xl">
+            {location.name}
+          </h3>
+          <p className="mt-5 text-lg font-semibold leading-7">{location.address}</p>
+          <a className="mt-2 inline-flex text-lg font-bold text-red" href={location.phoneHref}>
+            {location.phone}
+          </a>
+          {!compact && (
+            <div className="mt-6 space-y-2 text-sm font-semibold uppercase tracking-[0.12em] text-ink/60">
+              {location.hours.map((hour) => (
+                <p key={hour}>{hour}</p>
+              ))}
+            </div>
+          )}
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+            <a className="button button-dark" href={location.mapsUrl}>
+              Directions
+            </a>
+            <a className="button button-outline-dark" href={location.phoneHref}>
+              Call
+            </a>
           </div>
-        )}
-        <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-          <a className="button button-dark" href={location.mapsUrl}>
-            Directions
-          </a>
-          <a className="button button-outline-dark" href={location.phoneHref}>
-            Call
-          </a>
         </div>
       </article>
-      <article className="location-map-card scroll-reveal reveal-up overflow-hidden border border-forest/40 bg-ink">
+      <article className="location-map-card scroll-reveal reveal-right overflow-hidden border border-forest/40 bg-ink">
         <iframe
           aria-label="Google map for Tangra Masala"
           className="location-map-frame"
