@@ -16,7 +16,7 @@ export default function MenuPage() {
         eyebrow="Menu"
         image={images.friedRice}
         title="Tangra masala, Manchurian, Hakka, chilli, and more."
-        text="Menu highlights are based on public Tangra Masala menu listings. Please call the restaurant for current prices, availability, and takeout timing."
+        text="The Elmhurst menu below matches Tangra Fusion's published Tangra Masala menu. Call the restaurant for current availability and takeout timing."
       />
       <section className="px-5 py-20 sm:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">

@@ -223,7 +223,12 @@ export function MenuCard({
       <ul className="mt-6 space-y-5">
         {items.map((item) => (
           <li className="border-t border-ink/10 pt-4" key={item.name}>
-            <h4 className="text-base font-black leading-tight">{item.name}</h4>
+            <div className="flex items-start justify-between gap-4">
+              <h4 className="text-base font-black leading-tight">{item.name}</h4>
+              {item.price && (
+                <span className="shrink-0 text-sm font-black text-red">{item.price}</span>
+              )}
+            </div>
             <p className="mt-2 text-sm font-medium leading-6 text-ink/60">
               {item.description}
             </p>
@@ -302,7 +307,7 @@ export function LocationCards({ compact = false }: { compact?: boolean }) {
 export function YelpMenuLink() {
   return (
     <a className="button button-outline-dark" href={site.menuSourceUrl} rel="noreferrer" target="_blank">
-      Menu Source
+      View Full Menu
     </a>
   );
 }

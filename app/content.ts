@@ -3,7 +3,7 @@ export const site = {
   description:
     "Elmhurst's original Indo-Chinese halal kitchen serving Tangra masala, Manchurian, chilli, Hakka, and wok-fired family plates.",
   yelpUrl: "https://www.yelp.com/biz/tangra-masala-elmhurst-2",
-  menuSourceUrl: "https://places.singleplatform.com/tangra-masala/menu",
+  menuSourceUrl: "https://www.tangrafusion.com/menu",
   voltaUrl: "https://www.volta.nyc/",
 };
 
@@ -43,242 +43,182 @@ export const images = {
 
 export const menuSections = [
   {
-    title: "Tangra Sauces",
-    note: "Choose the house profile: dry, saucy, hot, or aromatic.",
-    items: [
-      {
-        name: "Tangra Masala",
-        description:
-          "A house blend of Chinese herbs and Indian spices, served dry or with gravy.",
-        tags: ["House"],
-      },
-      {
-        name: "Manchurian",
-        description:
-          "Spicy brown sauce with cilantro, garlic, and the Tangra-style finish.",
-        tags: ["Spicy"],
-      },
-      {
-        name: "Chilli",
-        description:
-          "Savory chile sauce with cumin seed heat and crisp wok aromatics.",
-        tags: ["Spicy"],
-      },
-      {
-        name: "Celery Heat",
-        description:
-          "A mouth-tingling sauce built around pureed celery and bright spice.",
-        tags: ["Tangy"],
-      },
-    ],
-  },
-  {
     title: "Appetizers",
-    note: "Crispy starters that made the Elmhurst storefront a destination.",
+    note: "Tangra Fusion's Elmhurst menu.",
     items: [
       {
-        name: "Lollypop Chicken",
-        description:
-          "Deep-fried chicken drumettes, crisp outside and ready for house sauce.",
+        name: "Lolly Pop Chicken",
+        price: "$13.50",
+        description: "Six pieces of Tangra's fried chicken signature.",
         tags: ["Popular"],
       },
       {
-        name: "Tangra Masala Fish Fingers",
-        description:
-          "Fried fish fingers with the restaurant's signature masala profile.",
-        tags: ["Popular", "Spicy"],
-      },
-      {
-        name: "Chicken Pakora",
-        description:
-          "Battered chicken fritters seasoned for Indo-Chinese snacking.",
+        name: "Fried Spicy Chicken Wings",
+        price: "$11.95",
+        description: "Six chicken wings coated in spicy seasoning.",
         tags: ["Spicy"],
       },
       {
-        name: "Chicken Momo",
-        description:
-          "Steamed or fried dumplings served as a compact table starter.",
-        tags: ["Shareable"],
+        name: "Tangra Masala Fish Finger",
+        price: "$9.95",
+        description: "Eight fried fish fingers with masala seasoning.",
+        tags: ["Popular"],
       },
       {
-        name: "Paneer Pakora",
-        description:
-          "Paneer fried crisp with a vegetarian-friendly spice crust.",
-        tags: ["Vegetarian"],
+        name: "Curry Chicken Roll",
+        price: "$5.95",
+        description: "Two curried chicken rolls.",
+        tags: ["Spicy"],
       },
     ],
   },
   {
     title: "Soups",
-    note: "Peppery, warming bowls before the wok dishes land.",
+    note: "Tangra Fusion's Elmhurst menu.",
     items: [
       {
-        name: "Chicken Hot & Sour",
-        description:
-          "The classic spicy-sour opener with chicken and deep savory flavor.",
+        name: "Chicken Hot and Sour Soup",
+        price: "$4.95",
+        description: "Spicy and sour chicken soup.",
         tags: ["Spicy"],
       },
       {
-        name: "Chicken Tangra Masala Soup",
-        description:
-          "A house-style soup with the same herb-and-spice base as the sauces.",
-        tags: ["House"],
-      },
-      {
-        name: "Manchow",
-        description:
-          "Chicken or seafood soup with Manchow spice and crunch.",
+        name: "Chicken Thai Soup",
+        price: "$4.95",
+        description: "Chicken soup with Thai-style aromatics.",
         tags: ["Spicy"],
       },
       {
-        name: "Vegetable Manchow",
-        description:
-          "A vegetarian version with heat, aromatics, and a clean finish.",
-        tags: ["Vegetarian", "Spicy"],
+        name: "Shrimp Thai Soup",
+        price: "$5.50",
+        description: "Shrimp soup with spicy Thai-style flavor.",
+        tags: ["Spicy"],
+      },
+      {
+        name: "Vegetable Manchow Soup",
+        price: "$4.95",
+        description: "Vegetarian Manchow-style soup.",
+        tags: ["Vegetarian"],
       },
     ],
   },
   {
-    title: "Noodles & Rice",
-    note: "Hakka comfort, Singapore heat, fried rice, and chow mein.",
+    title: "Noodles & Fried Rice",
+    note: "Tangra Fusion's Elmhurst menu.",
     items: [
       {
         name: "Chicken Tangra Masala Chow Mein",
-        description:
-          "Chow mein tossed in the house Tangra masala sauce.",
-        tags: ["House", "Spicy"],
+        price: "$13.50",
+        description: "Chicken chow mein in Tangra masala.",
+        tags: ["Spicy"],
       },
       {
-        name: "Mixed Hakka Chow Mein",
-        description:
-          "A wok-fired mix of noodles, meat, seafood, and vegetables.",
+        name: "Mixed Chow Mein",
+        price: "$14.50",
+        description: "Mixed chow mein with meat, seafood, and vegetables.",
         tags: ["Popular"],
       },
       {
-        name: "Manchurian Fried Rice",
-        description:
-          "Fried rice finished with Manchurian aromatics and a spicy brown sauce profile.",
-        tags: ["Spicy"],
+        name: "Chicken Manchurian Fried Rice",
+        price: "$12.00",
+        description: "Chicken fried rice with Manchurian sauce.",
+        tags: [],
       },
       {
-        name: "Vegetable Singapore Noodle",
-        description:
-          "Thin noodles with vegetables and Singapore-style spice.",
-        tags: ["Vegetarian"],
-      },
-      {
-        name: "Pad Thai Noodle",
-        description:
-          "Tangra's Indo-Chinese take on a sweet, savory, and tangy noodle plate.",
-        tags: ["Wok"],
-      },
-    ],
-  },
-  {
-    title: "Chicken & Beef",
-    note: "Order many dishes dry or with gravy.",
-    items: [
-      {
-        name: "Tangra Masala Chicken",
-        description:
-          "Chicken in the house masala sauce, available dry-style or saucy.",
-        tags: ["House", "Spicy"],
-      },
-      {
-        name: "Chilli Chicken",
-        description:
-          "A Tangra staple with chile, onion, peppers, and a glossy wok sauce.",
-        tags: ["Popular", "Spicy"],
-      },
-      {
-        name: "Ginger Chicken",
-        description:
-          "Chicken built around ginger heat, scallion lift, and savory sauce.",
-        tags: ["Spicy"],
-      },
-      {
-        name: "Beef with Satay Sauce",
-        description:
-          "Tender beef with a nutty, savory satay-style sauce.",
-        tags: ["Savory"],
-      },
-      {
-        name: "Beef Ginger Scallion",
-        description:
-          "Beef finished with ginger, scallion, and wok-charred aroma.",
-        tags: ["Spicy"],
-      },
-    ],
-  },
-  {
-    title: "Seafood & Goat",
-    note: "Fish, tiger prawn, and goat in the bold sauces.",
-    items: [
-      {
-        name: "Tangra Masala Fish",
-        description:
-          "Fish cooked dry or with gravy in the signature masala sauce.",
-        tags: ["House", "Spicy"],
-      },
-      {
-        name: "Tiger Prawn Manchurian",
-        description:
-          "Tiger prawns in spicy Manchurian sauce, dry or with gravy.",
-        tags: ["Spicy"],
-      },
-      {
-        name: "Spicy Salt & Pepper Tiger Prawn",
-        description:
-          "Dry-style tiger prawns tossed with salt, pepper, and chile.",
-        tags: ["Popular", "Spicy"],
-      },
-      {
-        name: "Goat Tangra Masala",
-        description:
-          "Goat served in the house masala, with dry or gravy options.",
-        tags: ["House"],
-      },
-      {
-        name: "Fish with Spicy Black Bean Sauce",
-        description:
-          "Fish in a savory black bean sauce with a spicy finish.",
+        name: "Mixed Tangra Masala Fried Rice",
+        price: "$14.00",
+        description: "Mixed fried rice with the house Tangra masala profile.",
         tags: ["Spicy"],
       },
     ],
   },
   {
     title: "Vegetarian",
-    note: "Paneer, tofu, vegetables, and crisp Manchurian favorites.",
+    note: "Tangra Fusion's Elmhurst menu.",
     items: [
       {
-        name: "Manchurian Paneer",
-        description:
-          "Paneer tossed in Tangra's spicy Manchurian sauce.",
-        tags: ["Vegetarian", "Spicy"],
+        name: "Masala Fries",
+        price: "$6.50",
+        description: "Home-cut fries with masala seasoning.",
+        tags: ["Vegetarian"],
       },
       {
-        name: "Chilli Tofu",
-        description:
-          "Tofu, chile, and aromatics in a savory wok glaze.",
-        tags: ["Vegetarian", "Spicy"],
+        name: "Paneer Pakora",
+        price: "$10.50",
+        description: "Eight pieces of spiced paneer pakora.",
+        tags: ["Vegetarian"],
       },
       {
-        name: "Vegetable Kofta Tangra Masala",
-        description:
-          "Vegetable kofta in the house Tangra masala, dry or with gravy.",
-        tags: ["Vegetarian", "House"],
+        name: "Vegetable Manchurian",
+        price: "$14.50",
+        description: "Vegetable entree in Manchurian sauce.",
+        tags: ["Vegetarian"],
       },
       {
-        name: "Salt & Pepper Gobi",
-        description:
-          "Cauliflower fried crisp and tossed with salt, pepper, and spice.",
+        name: "Vegetable Tangra Masala Chow Mein",
+        price: "$12.95",
+        description: "Vegetable chow mein with Tangra masala.",
         tags: ["Vegetarian", "Spicy"],
       },
+    ],
+  },
+  {
+    title: "Goat, Beef & Chicken",
+    note: "Tangra Fusion's Elmhurst menu.",
+    items: [
       {
-        name: "Paneer Salt & Pepper",
-        description:
-          "Paneer finished dry-style with peppery Indo-Chinese seasoning.",
-        tags: ["Vegetarian", "Spicy"],
+        name: "Tangra Masala Chicken",
+        price: "$14.95",
+        description: "Chicken in the house Tangra masala sauce.",
+        tags: ["Spicy"],
+      },
+      {
+        name: "Manchurian Chicken",
+        price: "$14.95",
+        description: "Chicken in Manchurian sauce.",
+        tags: ["Spicy"],
+      },
+      {
+        name: "Tangra Masala Beef",
+        price: "$15.95",
+        description: "Beef in Tangra masala sauce.",
+        tags: ["Spicy"],
+      },
+      {
+        name: "Chilli Goat",
+        price: "$17.95",
+        description: "Goat tossed in chile-forward sauce.",
+        tags: ["Spicy"],
+      },
+    ],
+  },
+  {
+    title: "Seafood & Lunch",
+    note: "Tangra Fusion's Elmhurst menu.",
+    items: [
+      {
+        name: "Tangra Masala Tiger Prawn",
+        price: "$18.95",
+        description: "Tiger prawns in Tangra masala.",
+        tags: ["Spicy"],
+      },
+      {
+        name: "Fish with Hot Garlic Sauce",
+        price: "$16.95",
+        description: "Fish in a pungent hot garlic sauce.",
+        tags: ["Spicy"],
+      },
+      {
+        name: "Lunch Special A",
+        price: "$12.95",
+        description: "Served with hot and sour or corn soup and steamed rice.",
+        tags: [],
+      },
+      {
+        name: "Lunch Special B",
+        price: "$11.95",
+        description: "Elmhurst lunch special from the Yelp menu.",
+        tags: [],
       },
     ],
   },
