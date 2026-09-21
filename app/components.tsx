@@ -88,9 +88,9 @@ export function SiteFooter() {
             <a className="transition hover:text-gold" href={site.yelpUrl}>
               Yelp
             </a>
-            <a className="transition hover:text-gold" href={site.menuSourceUrl}>
-              Menu Source
-            </a>
+            <Link className="transition hover:text-gold" href="/menu">
+              Shared Menu
+            </Link>
           </div>
         </div>
 
@@ -229,9 +229,11 @@ export function MenuCard({
                 <span className="shrink-0 text-sm font-black text-red">{item.price}</span>
               )}
             </div>
-            <p className="mt-2 text-sm font-medium leading-6 text-ink/60">
-              {item.description}
-            </p>
+            {item.description && (
+              <p className="mt-2 text-sm font-medium leading-6 text-ink/60">
+                {item.description}
+              </p>
+            )}
             {item.tags.length > 0 && (
               <div className="mt-3 flex flex-wrap gap-2">
                 {item.tags.map((tag) => (
@@ -301,13 +303,5 @@ export function LocationCards({ compact = false }: { compact?: boolean }) {
         />
       </article>
     </div>
-  );
-}
-
-export function YelpMenuLink() {
-  return (
-    <a className="button button-outline-dark" href={site.menuSourceUrl} rel="noreferrer" target="_blank">
-      View Full Menu
-    </a>
   );
 }

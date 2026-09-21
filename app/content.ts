@@ -41,7 +41,7 @@ export const images = {
   tangraPlate: "https://www.indiafoodnetwork.in/h-upload/2022/11/16/834446-3.webp",
 };
 
-export const menuSections = [
+const legacyMenuSections = [
   {
     title: "Appetizers",
     note: "Tangra Fusion's Elmhurst menu.",
@@ -223,6 +223,8 @@ export const menuSections = [
     ],
   },
 ];
+
+export { sharedMenuSections as menuSections } from "./shared-menu";
 
 export const location = {
   name: "Tangra Masala",
