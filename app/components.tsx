@@ -71,7 +71,7 @@ export function SiteFooter() {
           </div>
           <p className="mt-7 text-xs font-black uppercase text-cream/48">
             Made by{" "}
-            <a className="volta-link" href="https://www.novusnyc.org/" rel="noreferrer" target="_blank">
+            <a className="novus-link" href="https://www.novusnyc.org/" rel="noreferrer" target="_blank">
               Novus
             </a>
           </p>

@@ -4,7 +4,7 @@ export const site = {
     "Elmhurst's original Indo-Chinese halal kitchen serving Tangra masala, Manchurian, chilli, Hakka, and wok-fired family plates.",
   yelpUrl: "https://www.yelp.com/biz/tangra-masala-elmhurst-2",
   menuSourceUrl: "https://www.tangrafusion.com/menu",
-  voltaUrl: "https://www.volta.nyc/",
+  novusUrl: "https://www.novusnyc.org/",
 };
 
 export const navItems = [
